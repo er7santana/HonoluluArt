@@ -12,6 +12,9 @@
 		8408E70B22F3A2170049891C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8408E70922F3A2170049891C /* Main.storyboard */; };
 		8408E70D22F3A2190049891C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8408E70C22F3A2190049891C /* Assets.xcassets */; };
 		8408E71022F3A2190049891C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8408E70E22F3A2190049891C /* LaunchScreen.storyboard */; };
+		8408E71822F3A25D0049891C /* PublicArt.json in Resources */ = {isa = PBXBuildFile; fileRef = 8408E71722F3A25D0049891C /* PublicArt.json */; };
+		8408E71A22F3A5E60049891C /* Artwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8408E71922F3A5E60049891C /* Artwork.swift */; };
+		8408E72022F3AFFA0049891C /* ArtworkViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8408E71F22F3AFFA0049891C /* ArtworkViews.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +25,9 @@
 		8408E70C22F3A2190049891C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8408E70F22F3A2190049891C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8408E71122F3A2190049891C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8408E71722F3A25D0049891C /* PublicArt.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = PublicArt.json; sourceTree = "<group>"; };
+		8408E71922F3A5E60049891C /* Artwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Artwork.swift; sourceTree = "<group>"; };
+		8408E71F22F3AFFA0049891C /* ArtworkViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtworkViews.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +60,41 @@
 		8408E70422F3A2170049891C /* HonoluluArt */ = {
 			isa = PBXGroup;
 			children = (
+				8408E71B22F3AC980049891C /* Models */,
+				8408E71E22F3AFE70049891C /* Views */,
+				8408E71C22F3ACA50049891C /* ViewControllers */,
 				8408E70522F3A2170049891C /* AppDelegate.swift */,
-				8408E70722F3A2170049891C /* ViewController.swift */,
 				8408E70922F3A2170049891C /* Main.storyboard */,
 				8408E70C22F3A2190049891C /* Assets.xcassets */,
 				8408E70E22F3A2190049891C /* LaunchScreen.storyboard */,
 				8408E71122F3A2190049891C /* Info.plist */,
+				8408E71722F3A25D0049891C /* PublicArt.json */,
 			);
 			path = HonoluluArt;
+			sourceTree = "<group>";
+		};
+		8408E71B22F3AC980049891C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				8408E71922F3A5E60049891C /* Artwork.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		8408E71C22F3ACA50049891C /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				8408E70722F3A2170049891C /* ViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		8408E71E22F3AFE70049891C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				8408E71F22F3AFFA0049891C /* ArtworkViews.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -122,6 +155,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8408E71822F3A25D0049891C /* PublicArt.json in Resources */,
 				8408E71022F3A2190049891C /* LaunchScreen.storyboard in Resources */,
 				8408E70D22F3A2190049891C /* Assets.xcassets in Resources */,
 				8408E70B22F3A2170049891C /* Main.storyboard in Resources */,
@@ -136,6 +170,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				8408E70822F3A2170049891C /* ViewController.swift in Sources */,
+				8408E72022F3AFFA0049891C /* ArtworkViews.swift in Sources */,
+				8408E71A22F3A5E60049891C /* Artwork.swift in Sources */,
 				8408E70622F3A2170049891C /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
